@@ -3,6 +3,8 @@ const { ApolloServer } = require("apollo-server"); // initializing apollo server
 // Scalar types String, Boolean, Int, Float, ID
 // Object types: Query, Mutation, Subscription
 
+const { db } = require("./db"); // importing db
+const { Mutation } = require("./resolvers/mutation"); // importing mutation resolver
 const { typeDefs } = require("./schema"); // import schema from schema.js
 const { Query } = require("./resolvers/Query"); // import Query resolver from Query.js
 const { Product } = require("./resolvers/Product"); // import Product resolver from Product.js
@@ -15,6 +17,10 @@ const server = new ApolloServer({
     Query,
     Product,
     Category,
+    Mutation,
+  },
+  context: {
+    db,
   },
 });
 

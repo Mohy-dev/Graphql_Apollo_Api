@@ -14,7 +14,7 @@ First run `npm install` then use the command below to launch the server in the t
 nodemon index
 ```
 
-Open the url that the server runs on your browser to interact with the Apollo GUI, and you're ready to go, have fun with the queries 🚀
+Open the url that the server runs on with the browser to interact with the Apollo GUI, and you're ready to go, have fun with the queries 🚀
 
 
 ```graphql

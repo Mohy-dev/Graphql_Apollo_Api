@@ -8,10 +8,12 @@
 
 ## How To Use ⬇️
 
-Use the command below to launch the server in the terminal
+First run `npm install` then use the command below to launch the server in the terminal
 
 ```bash
 nodemon index
 ```
+
+and you ready to go 🚀
 
 ---

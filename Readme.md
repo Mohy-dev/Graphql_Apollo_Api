@@ -16,4 +16,24 @@ nodemon index
 
 and you ready to go 🚀
 
+
+```graphql
+query Query($categoryId: ID!) {
+  category(id: $categoryId) {
+    name
+    products(filter: { onSale: true }) {
+      quantity
+      description
+      price
+      onSale
+      reviews {
+        title
+        comment
+        rating
+        date
+      }
+    }
+  }
+}
+```
 ---
